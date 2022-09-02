@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #eeeeee;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+.deuxLogoCranter {
+    display: flex;
+}
+
+.rectangle {
+    width: 25%;
+    height: 140px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid #eeeeeea6;
+}
+
+#menu {
+    display: flex;
+}
+
+.barreDeRecherche .fa-solid {
+    font-size: 25px;
+    color: #414f65f2;
+    padding: 0 8px;
+}
+
+.barreDeRecherche .fa-solid:hover {
+    font-size: 25px;
+    color: #2f4260f2;
+    padding: 0 8px;
+}
+
+.rectangle:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 2px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#menu .active {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #1500ff96;
+    color: white;
+    font-weight: 900;
+}
+
+.barreDeRecherche input {
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 0.4rem;
+    text-align: center;
+}
+
+#demandeAmis .lesCartes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#demandeAmis .lesCartes .card {
+    margin: 1rem 0;
+}
+
+#listeAmis .lesCartes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#listeAmis .lesCartes .card {
+    margin: 1rem 0;
+}
+
+#listeAmis h2,
+#demandeAmis h2 {
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+}
+
+
+
+/* Partie index avec les 3 partis */
+
+#global {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#raccourciStories,
+#dernierInscrit {
+    flex: 1;
+    padding: 1rem;
+    border: 1px solid grey;
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+.lesStories {
+    position: sticky;
+    top: 10px;
+
+}
+
+#listeActus {
+    flex: 3;
+}
+
+.uneStorie {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.uneStorie {
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+
+}
+
+.uneStorie img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin: 0.2rem 0;
+    border: 1px dashed grey;
+
+}
+
+#listeActus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.uneActu {
+    border: 1px solid grey;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+.uneActu img {
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    height: 400px;
+}
+
+.buttonAimeCommente {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 1rem;
+
+}
+
+.buttonAimeCommente a {
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+}
+
+.unePersonne {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid grey;
+    border-radius: 5px;
+
+}
+
+.unePersonne img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin: 0.2rem 0;
+    border: 1px dashed grey;
+
+}
+
+.menuBas {
+    display: none;
+
+}
+
+.menuBas .active {
+
+    color: #1500ff96;
+
+    font-weight: 900;
+}
+
+/* Partie profil */
+
+#profil .banner {
+    background: url("../images/banner3.avif");
+    height: 350px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profil .banner img {
+    object-fit: cover;
+    width: 250px;
+
+}
+
+.buttonAjoutStorieEtActu {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.mesActu #listeActus .uneActu {
+    width: 70%;
+}
+
+.mesActu #listeActus .buttonAimeCommente {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+
+}
+
+.mesActu #listeActus .buttonAimeCommente button {
+    width: 260px;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 882px) {
+    .uneActu {
+        width: 98%;
+
+    }
+
+    #raccourciStories,
+    #dernierInscrit {
+        margin: 1rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .uneActu {
+        width: 99%;
+
+    }
+
+    #raccourciStories,
+    #dernierInscrit {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #menu {
+        display: none;
+    }
+
+    .menuBas {
+
+        position: fixed;
+        bottom: 0;
+        border: 1px solid rgb(191, 191, 191);
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 23;
+    }
+
+
+}
